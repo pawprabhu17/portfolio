@@ -22,6 +22,16 @@ h1{
 h5{
 	font-weight: 330;
 }
+.social{
+    transition-timing-function:ease;
+    transition-property:all;
+    transition-duration: 0.7s;
+   
+}
+.social:hover{
+    transform: scale(1.2);
+    
+}
 .fa-chevron-down{
     transition-timing-function:ease;
     transition-property:all;
@@ -29,7 +39,7 @@ h5{
    
 }
 .fa-chevron-down:hover{
-    transform: scale(1.4);
+    transform: scale(1.3);
     
 }
 @media only screen and (max-width: 886px) and (min-width: 300px){
