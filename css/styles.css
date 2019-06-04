@@ -2,6 +2,8 @@ body{
 	margin:  0px;
 	padding: 0px;
 	background-color: #34A853;
+	overflow-x: hidden;
+	overflow-y:hidden;
 }
 a{
 	color: white;
@@ -20,14 +22,22 @@ h1{
 h5{
 	font-weight: 330;
 }
-
-@media only screen and (max-width: 576px) {
+.fa-chevron-down{
+    transition-timing-function:ease;
+    transition-property:all;
+    transition-duration: 0.7s;
+   
+}
+.fa-chevron-down:hover{
+    transform: scale(1.4);
+    
+}
+@media only screen and (max-width: 886px) and (min-width: 300px){
   h1 {
-    font-size: 33;
-	margin:0 15px 0 55px;
+    font-size: 30;
+	margin:0 15px 0 50px;
   }
   h5 {
   	font-size: 18;
   }
-  
 }
