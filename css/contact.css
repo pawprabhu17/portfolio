@@ -1,0 +1,32 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	overflow-x: hidden;
+}
+.navbar-dark{
+	background:#34A853;
+}
+.card-header{
+	background: #009975;
+	color: white;
+}
+.card-body{
+	
+}
+.frm{
+    margin:15px;
+}
+.sp{
+	color: red;
+}
+.btn{
+	transition-timing-function:ease;
+    transition-property:all;
+    transition-duration: 0.7s;
+}
+.btn:hover{
+	color: #FBBE0C;
+	transform: scale(1.2);
+	
+}
