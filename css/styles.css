@@ -36,7 +36,7 @@ h5{
 .fa-chevron-down{
     transition-timing-function:ease;
     transition-property:all;
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
    
 }
 .fa-chevron-down:hover{

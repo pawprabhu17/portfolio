@@ -1,0 +1,20 @@
+body{
+	margin:  0px;
+	padding: 0px;
+	background-color: #34A853;
+	overflow-x: hidden;
+	overflow-y:hidden;
+}
+
+.container{
+	background-color: white;
+}
+
+.card-header{
+	background: #009975;
+	color: white;
+}
+
+.list-group-item{
+	font-family: 'Heebo', sans-serif;
+}
