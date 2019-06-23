@@ -6,15 +6,12 @@ body{
 	overflow-y:hidden;
 }
 
-.container{
-	background-color: white;
+.card-img{
+	border-radius: 120px;
 }
-
-.card-header{
-	background: #009975;
-	color: white;
-}
-
-.list-group-item{
-	font-family: 'Heebo', sans-serif;
+@media only screen and (max-width: 1056px){
+	.card-img{
+		border-radius: 0;
+	}
+	
 }
