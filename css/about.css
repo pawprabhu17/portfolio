@@ -7,8 +7,10 @@ body{
 }
 
 .card-img{
-	border-radius: 120px;
+	border-radius: 110px;
 }
+
+
 @media only screen and (max-width: 1056px){
 	.card-img{
 		border-radius: 0;
