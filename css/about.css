@@ -6,11 +6,71 @@ body{
 	overflow-y:hidden;
 }
 
-.card-img{
-	border-radius: 110px;
+.card{
+	background-color: #d9d872;
 }
 
+.card-img{
+	border-radius: 100%;
+}
 
+ul{
+	font-family: 'Bree Serif', serif;
+}
+
+.html{
+	width:80%;
+	height: 25px;
+	background-color:  #454d66;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+.bootstrap{
+	width:75%;
+	height: 25x;
+	background-color:  #454d66;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+.css{
+	width:70%;
+	height: 25px;
+	background-color:  #454d66;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+.java{
+	width:70%;
+	height: 25px;
+	background-color:  #454d66;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+.javascript{
+	width:50%;
+	height: 25px;
+	background-color:  #454d66;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+.angular{
+	width:30%;
+	height: 25px;
+	background-color:  #454d66;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
 @media only screen and (max-width: 1056px){
 	.card-img{
 		border-radius: 0;
