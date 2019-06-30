@@ -3,7 +3,6 @@ body{
 	padding: 0px;
 	background-color: #34A853;
 	overflow-x: hidden;
-	overflow-y:hidden;
 }
 
 .card{
@@ -70,6 +69,14 @@ ul{
 	text-align: center;
 	line-height: 25px;
 	color: white;
+}
+
+ul div p{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.marks{
+	
+	color: blue;
 }
 @media only screen and (max-width: 1056px){
 	.card-img{

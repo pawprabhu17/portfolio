@@ -1,14 +1,14 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background-color: white;
+	background-color: #009975;
 	overflow-x: hidden;
 }
-.navbar-dark{
+/*.navbar-dark{
 	background:#34A853;
-}
+}*/
 .card-header{
-	background: #009975;
+	background: #454d66;
 	color: white;
 }
 .frm{
