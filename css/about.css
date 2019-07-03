@@ -6,7 +6,7 @@ body{
 }
 
 .card{
-	background-color: #d9d872;
+	background-color: #b8e9c0;
 }
 
 .card-img{
@@ -15,8 +15,11 @@ body{
 
 ul{
 	font-family: 'Bree Serif', serif;
-}
 
+}
+.list-group-item{
+	background-color: #cce490;
+}
 .html{
 	width:80%;
 	height: 25px;
@@ -45,7 +48,16 @@ ul{
 }
 
 .java{
-	width:70%;
+	width:60%;
+	height: 25px;
+	background-color:  #454d66;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}
+
+.sql{
+	width:60%;
 	height: 25px;
 	background-color:  #454d66;
 	text-align: center;
@@ -75,12 +87,20 @@ ul div p{
 	font-family: 'Nanum Gothic', sans-serif;
 }
 .marks{
-	
+
 	color: blue;
+}
+
+.desc{
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	margin-bottom: 0;
+	background-color: white;
+	padding: 10px;
 }
 @media only screen and (max-width: 1056px){
 	.card-img{
-		border-radius: 0;
+		border-radius: 20px;
 	}
 	
 }

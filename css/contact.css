@@ -3,12 +3,14 @@ body{
 	padding: 0px;
 	background-color: #009975;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 /*.navbar-dark{
 	background:#34A853;
 }*/
 .card-header{
 	background: #454d66;
+	opacity: 0.9;
 	color: white;
 }
 .frm{
