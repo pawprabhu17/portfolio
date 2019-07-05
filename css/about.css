@@ -7,13 +7,15 @@ body{
 
 .card{
 	background-color: #b8e9c0;
+	box-shadow: 5px 15px 20px;
 }
 
 .card-img{
 	border-radius: 100%;
 }
 
-ul{
+
+ul,section{
 	font-family: 'Bree Serif', serif;
 
 }
@@ -97,6 +99,7 @@ ul div p{
 	margin-bottom: 0;
 	background-color: white;
 	padding: 10px;
+	border-radius: 10px;
 }
 @media only screen and (max-width: 1056px){
 	.card-img{
