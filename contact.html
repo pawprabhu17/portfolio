@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">  
 
    
 
@@ -22,6 +22,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 
     <nav class="navbar navbar-dark navbar-expand-sm  d-none d-sm-block">     
         <h2 class="text-light">Contact Me</h2>               
@@ -34,31 +35,35 @@
                     <div class="card-header">
                         <h2>Submit Your Feedback</h2>
                     </div>
-                    <div class="card-body pb-0">         
+                    <div class="card-body pb-0" ng-app="myapp" ng-controller="mycontroller">         
                         <form>
                             <div class="frm form-group">
                                 <label for="name"><b><big>Name<sup class="sp">*</sup></big></b></label>
-                                <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name" ng-model="name">
                             </div>
                             <div class="frm form-group">
                                 <label for="email"><b><big>Email-id<sup class="sp">*</sup></big></b></label>
-                                <input type="email" id="email" class="form-control" placeholder="Enter your email-id">
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email-id" ng-model="email">
                                 <small class="text-info form-text">(Your email-id will not be shared with anyone)</small>
                             </div>
                             <div class="frm form-group">
                                 <label for="mobile_number"><b><big>Phone No<sup class="sp">*</sup></big></b></label>
-                                <input type="tel" maxlength="10" minlength="10" id="mobile_number" class="form-control" placeholder="Enter your Number" width="30%">
+                                <input type="tel" maxlength="10" minlength="10" id="mobile_number" class="form-control" placeholder="Enter your Number" width="30%" ng-model="phone">
                                 <small class="text-info form-text">(Your number will not be shared with anyone)</small>
                             </div>                           
                             <div class="frm form-group">
                                 <label for="Feedback"><b><big>Feedback</big></b></label>
-                                <textarea rows="3" id="Feedback" class="form-control" placeholder="Share your views about MY PORTFOLIO..." ></textarea>
+                                <textarea rows="3" id="Feedback" class="form-control" placeholder="Share your views about MY PORTFOLIO..." ng-model="feedback"></textarea>
                                 <small class="text-info form-text">(Your feedback is valuable to me)</small>
                             </div>
-                            <center><button class="btn btn-success mb-0"><b>Submit</b></button></center>
+                            <center><button class="btn btn-success mb-0" ng-click="submit()"><b>Submit</b></button></center>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+</body>
+<script type="text/javascript" src="js/contact.js"></script>
+</html>
