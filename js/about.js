@@ -1,4 +1,4 @@
-$("li:nth-child(1)").hover(function(){
+$("li:nth-child(1)").hover(function(){      
     $(this).append($("<div class='html'>80%</div>").addClass("html"));    
     },function(){
         $(this).find("div:last").remove();

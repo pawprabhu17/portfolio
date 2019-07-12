@@ -1,13 +1,14 @@
+
 body{
 	margin:  0px;
 	padding: 0px;
-	background-color: #34A853;
+	background-color:  #2b8956;
 	overflow-x: hidden;
 }
 
 .card{
-	background-color: #b8e9c0;
-	box-shadow: 5px 15px 20px;
+	background-color:#e6e9de ;
+	box-shadow: 5px 10px 15px;
 }
 
 .card-img{
@@ -16,81 +17,126 @@ body{
 
 
 ul,section{
-	font-family: 'Bree Serif', serif;
+	font-family: 'DM Serif Text', serif;
+
 
 }
 .list-group-item{
-	background-color: #cce490;
+	background-color:#d9e2cc;
+	color:#0e5d44;
+}
+
+@keyframes move_left_to_right{
+	0%   { left:0px; top:0px;}  
+  100% { left:40px; top:0px;}
+}
+@keyframes bootstrap{
+	0%   { left:0px; top:0px;}  
+  100% { left:20px; top:0px;}
+}
+@keyframes css_java_sql{
+	0%   { left:0px; top:0px;}  
+  100% { left:100px; top:0px;}
 }
 .html{
 	width:80%;
 	height: 25px;
-	background-color:  #454d66;
+	background-color:#025782;
 	text-align: center;
 	line-height: 25px;
-	color: white;
-}
+	color:white;	
+	position: relative;
+  	animation-name: move_left_to_right;
+  	animation-duration: 0.7s;
+  	animation-fill-mode: forwards;
+}		
 
 .bootstrap{
 	width:75%;
-	height: 25x;
-	background-color:  #454d66;
+	height: 25px;
+	background-color:  #025782;
 	text-align: center;
 	line-height: 25px;
 	color: white;
+	position: relative;
+  	animation-name: bootstrap;
+  	animation-duration: 0.7s;
+  	animation-fill-mode: forwards;  	
 }
 
 .css{
 	width:70%;
 	height: 25px;
-	background-color:  #454d66;
+	background-color:  #025782;
 	text-align: center;
 	line-height: 25px;
 	color: white;
-}
+	position: relative;
+  	animation-name: css_java_sql;
+  	animation-duration: 0.7s;
+  	animation-fill-mode: forwards;
+}		
+
 
 .java{
 	width:60%;
 	height: 25px;
-	background-color:  #454d66;
+	background-color:   #025782;
 	text-align: center;
 	line-height: 25px;
 	color: white;
+	position: relative;
+  	animation-name: css_java_sql;
+  	animation-duration: 0.7s;
+  	animation-fill-mode: forwards;	
 }
 
 .sql{
 	width:60%;
 	height: 25px;
-	background-color:  #454d66;
+	background-color:  #025782;
 	text-align: center;
 	line-height: 25px;
 	color: white;
+	position: relative;
+  	animation-name: css_java_sql;
+  	animation-duration: 0.7s;
+  	animation-fill-mode: forwards;
 }
 
 .javascript{
 	width:50%;
 	height: 25px;
-	background-color:  #454d66;
+	background-color:  #025782;
 	text-align: center;
 	line-height: 25px;
-	color: white;
+	color:white;
+	position: relative;
+  	animation-name: css_java_sql;
+  	animation-duration: 0.7s;
+  	animation-fill-mode: forwards;	
 }
 
 .angular{
 	width:30%;
 	height: 25px;
-	background-color:  #454d66;
+	background-color:  #025782;
 	text-align: center;
 	line-height: 25px;
 	color: white;
-}
+	position: relative;
+  	animation-name:css_java_sql;
+  	animation-duration: 0.7s;
+  	animation-fill-mode: forwards;
+}		
+
 
 ul div p{
 	font-family: 'Nanum Gothic', sans-serif;
 }
 .marks{
 
-	color: blue;
+	color:#025782;
 }
 
 .desc{
@@ -101,9 +147,15 @@ ul div p{
 	padding: 10px;
 	border-radius: 10px;
 }
-@media only screen and (max-width: 1056px){
+@media only screen and (max-width: 766px){
 	.card-img{
 		border-radius: 20px;
 	}
 	
+}
+@media only screen and (min-width: 766px) and (max-width: 992px){
+	img{
+		height: 150px;
+		width:150px;		
+	}
 }

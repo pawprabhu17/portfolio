@@ -1,0 +1,17 @@
+@mixin background-color($color){
+	-webkit-background-color:$color;
+	-moz-background-color:$color;
+	-ms-background-color:$color;
+	background-color: $color;
+}
+body{
+	margin:  0px;
+	padding: 0px;
+	background-color: #03645f;
+	overflow-x: hidden;
+}
+
+#skill1{
+	@include background-color(#175243);
+
+}

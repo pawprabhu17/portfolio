@@ -1,12 +1,12 @@
 body{
 	margin:  0px;
 	padding: 0px;
-	background-color: #34A853;
+	background-color: #24880b;
 	overflow-x: hidden;
 	overflow-y:hidden;
 }
 a{
-	color: white;
+	color: #cee8e7;
 	
 }
 a:hover{
@@ -17,11 +17,12 @@ a:hover{
 }
 h1{
 	font-family: 'Open Sans', sans-serif;
-	color: white;
+	color: #cee8e7;
 
 }
 h5{
 	font-weight: 330;
+  color:#cee8e7;
 }
 .social{
     transition-timing-function:ease;
@@ -40,8 +41,7 @@ h5{
    
 }
 .fa-chevron-down:hover{
-    transform: scale(1.2);
-    
+    transform: scale(1.2);    
 }
 @media only screen and (max-width: 886px) and (min-width: 300px){
   h1 {
