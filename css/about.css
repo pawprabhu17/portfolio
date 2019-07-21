@@ -2,12 +2,19 @@
 body{
 	margin:  0px;
 	padding: 0px;
-	background-color:  #2b8956;
+	background-color: #155b44;
 	overflow-x: hidden;
+}
+li a h4{
+	color: #cee8e7;
+	
+}
+li a h4:hover{
+	color:#FBBE0C;
 }
 
 .card{
-	background-color:#e6e9de ;
+	background-color:#cee8e7;
 	box-shadow: 5px 10px 15px;
 }
 
@@ -17,34 +24,34 @@ body{
 
 
 ul,section{
-	font-family: 'DM Serif Text', serif;
+	font-family: 'Poppins', sans-serif;
 
 
 }
 .list-group-item{
-	background-color:#d9e2cc;
-	color:#0e5d44;
+	background-color:white;
+	color:black;
 }
 
 @keyframes move_left_to_right{
 	0%   { left:0px; top:0px;}  
   100% { left:40px; top:0px;}
 }
-@keyframes bootstrap{
+/*@keyframes bootstrap{
 	0%   { left:0px; top:0px;}  
   100% { left:20px; top:0px;}
 }
 @keyframes css_java_sql{
 	0%   { left:0px; top:0px;}  
   100% { left:100px; top:0px;}
-}
+}*/
 .html{
 	width:80%;
 	height: 25px;
-	background-color:#025782;
+	background-color:#FBBE0C;
 	text-align: center;
 	line-height: 25px;
-	color:white;	
+	color:black;	
 	position: relative;
   	animation-name: move_left_to_right;
   	animation-duration: 0.7s;
@@ -54,12 +61,12 @@ ul,section{
 .bootstrap{
 	width:75%;
 	height: 25px;
-	background-color:  #025782;
+	background-color: #FBBE0C;
 	text-align: center;
 	line-height: 25px;
-	color: white;
+	color:black;
 	position: relative;
-  	animation-name: bootstrap;
+  	animation-name: move_left_to_right;
   	animation-duration: 0.7s;
   	animation-fill-mode: forwards;  	
 }
@@ -67,12 +74,12 @@ ul,section{
 .css{
 	width:70%;
 	height: 25px;
-	background-color:  #025782;
+	background-color:  #FBBE0C;
 	text-align: center;
 	line-height: 25px;
-	color: white;
+	color:black;
 	position: relative;
-  	animation-name: css_java_sql;
+  	animation-name: move_left_to_right;
   	animation-duration: 0.7s;
   	animation-fill-mode: forwards;
 }		
@@ -81,12 +88,12 @@ ul,section{
 .java{
 	width:60%;
 	height: 25px;
-	background-color:   #025782;
+	background-color:   #FBBE0C;
 	text-align: center;
 	line-height: 25px;
-	color: white;
+	color: black;
 	position: relative;
-  	animation-name: css_java_sql;
+  	animation-name: move_left_to_right;
   	animation-duration: 0.7s;
   	animation-fill-mode: forwards;	
 }
@@ -94,12 +101,12 @@ ul,section{
 .sql{
 	width:60%;
 	height: 25px;
-	background-color:  #025782;
+	background-color:  #FBBE0C;
 	text-align: center;
 	line-height: 25px;
-	color: white;
+	color: black;
 	position: relative;
-  	animation-name: css_java_sql;
+  	animation-name:move_left_to_right;
   	animation-duration: 0.7s;
   	animation-fill-mode: forwards;
 }
@@ -107,12 +114,12 @@ ul,section{
 .javascript{
 	width:50%;
 	height: 25px;
-	background-color:  #025782;
+	background-color:  #FBBE0C;
 	text-align: center;
 	line-height: 25px;
-	color:white;
+	color: black;
 	position: relative;
-  	animation-name: css_java_sql;
+  	animation-name:move_left_to_right;
   	animation-duration: 0.7s;
   	animation-fill-mode: forwards;	
 }
@@ -120,12 +127,12 @@ ul,section{
 .angular{
 	width:30%;
 	height: 25px;
-	background-color:  #025782;
+	background-color:  #FBBE0C;
 	text-align: center;
 	line-height: 25px;
-	color: white;
+	color: black;
 	position: relative;
-  	animation-name:css_java_sql;
+  	animation-name:move_left_to_right;
   	animation-duration: 0.7s;
   	animation-fill-mode: forwards;
 }		
@@ -133,6 +140,9 @@ ul,section{
 
 ul div p{
 	font-family: 'Nanum Gothic', sans-serif;
+}
+div a{
+	font-size:14px;
 }
 .marks{
 
@@ -143,7 +153,7 @@ ul div p{
 	color: black;
 	font-family: 'Ubuntu', sans-serif;
 	margin-bottom: 0;
-	background-color: white;
+	background-color:  #cee8e7;
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -157,5 +167,25 @@ ul div p{
 	img{
 		height: 150px;
 		width:150px;		
+	}
+}
+@media only screen and (max-width: 886px) and (min-width: 300px){
+	h5,.list-group-item{
+		font-size:16px;
+	}
+	p b{
+		font-size: 12px;
+	}
+	p.text-muted{
+		font-size: 10px;
+	}
+	.marks{
+		font-size: 11px;
+	}
+	div a{
+		font-size: 12px;
+	}
+	.desc{
+		font-size: 12px;
 	}
 }

@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
     
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/test.scss">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/test.css">
     
 </head>
   
@@ -28,25 +28,137 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="card mt-5">
 
-                    <div class="row">
-                        <div class="col-md-4 col-6 p-5" id="skill1">
-                            HTML5
-                            <span class="min-chart" id="chart-sales" data-percent="80"><span class="percent"></span></span>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-4 col-6 p-5" id="skill4">
-                            JAVA
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-dark navbar-expand-md">
+
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="Navbar"> 
+
+            <div class="navbar-nav mr-auto d-none d-md-block">
+                <li class="nav-item mx-1 mx-md-0">
+                    <a class="nav-link active" href="#" data-toggle="tooltip" title="You Are At About Page!">
+                        <h4 style="color:#2ccaa8;">About</h4>
+                    </a>
+                </li>
             </div>
-        </div>
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item mx-1 mx-md-3">
+                    <a class="nav-link" href="/index.html">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                
+                <li class="nav-item mx-1 mx-md-3">
+                    <a class="nav-link" href="/portfolio.html">
+                        <h4>Portfolio</h4>
+                    </a>
+                </li>
+
+                <li class="nav-item mx-1 mx-md-3">
+                    <a class="nav-link" href="/contact.html">
+                        <h4>Contact Me</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>  
+
+    </nav>
+    <div class="container">
+        
+                <div class="card">
+                    <div class="card-header">
+                        <h3>SKILLS</h3>
+                    </div>
+                    <div class="row my-3">                       
+                        <div class="col-6 col-md-3">
+                            <center><h5>HTML5/CSS3</h5></center>
+                            <div class="progress blue">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">90%</div>
+                            </div>
+
+                        </div>                       
+                        <div class="col-6 col-md-3">                           
+                            <center><h5>BOOTSTRAP</h5></center>
+                            <div class="progress yellow">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">80%</div>
+                            </div>
+                             
+                        </div>
+                        <div class="col-6 col-md-3">                           
+                            <center><h5>JAVA</h5></center>
+                            <div class="progress green" id="css3">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">70%</div>
+                            </div>
+                             
+                        </div>
+                        <div class="col-6 col-md-3">
+                                <center><h5>SQL</h5></center>
+                            <div class="progress pink">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">70%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-3">
+                        
+
+                        <div class="col-6 col-md-3">
+                                <center><h5>JAVASCRIPT</h5></center>
+                            <div class="progress black">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">60%</div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                                <center><h5>REACTJS</h5></center>
+                            <div class="progress red">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">40%</div>
+                            </div>
+                        </div>
+                    </div>            
+                    
+                </div>
     </div>
+
+</body>
+</html>

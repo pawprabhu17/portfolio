@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">  
 
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
    
 
     <link rel="stylesheet" href="css/contact.css">
@@ -27,49 +28,97 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 
-    <nav class="navbar navbar-dark navbar-expand-sm  d-none d-sm-block">     
-        <h2 class="text-light">Contact Me</h2>               
+    <nav class="navbar navbar-dark navbar-expand-md mb-5">
+
+    	<button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="Navbar"> 
+
+	    	<div class="navbar-nav mr-auto d-none d-md-block">
+	            <li class="nav-item mx-1 mx-md-0">
+	            	<a class="nav-link active" href="#" data-toggle="tooltip" title="You Are At Contact Page!">
+	                    <h4 style="color:#2ccaa8;">Contact Me</h4>
+	                </a>
+	            </li>
+	        </div>
+
+	        <ul class="navbar-nav ml-auto">
+	            <li class="nav-item mx-1 mx-md-3">
+	                <a class="nav-link" href="/index.html">
+	                    <h4>Home</h4>
+	                </a>
+	            </li>
+	            <li class="nav-item mx-1 mx-md-3">
+	                <a class="nav-link" href="/about.html">
+	                    <h4>About</h4>
+	                </a>
+	            </li>
+	            <li class="nav-item mx-1 mx-md-3">
+	                <a class="nav-link" href="/portfolio.html">
+	                    <h4>Portfolio</h4>
+	                </a>
+	            </li>
+	        </ul>
+	    </div>  
+
     </nav>
 
-    <div class="container mt-3 mt-sm-2">
+    <div class="container mt-md-2">
         <div class="row">
-            <div class="col-12 col-md-8 offset-md-2">
-                <div class="card" style="border-width: 1px;border-color:black ;">
-                    <div class="card-header">
-                        <h2>Submit Your Feedback</h2>
-                    </div>
-
-                    <div class="card-body pb-0" ng-app="myApp" ng-controller="myController">         
+            <div class="col-12 col-md-12">
+                <div class="card p-2 ">
+                    <div class="card-body pb-0" ng-app="myApp" ng-controller="myController">                          
                         <form>
-                            <div class="frm form-group">
-                                <label for="name">
-                                    <b><big>Name<sup class="sp">*</sup></big></b>
-                                </label>
-                                <input type="text" id="name" class="form-control" placeholder="Enter your name" ng-model="name">
+
+                        	<div class="row">
+	                        	<div class="col-12 col-md-5 ml-md-3">
+		                            <div class="frm form-group">
+		                                <label for="name">
+		                                    <b><big>Name<sup class="sp">*</sup></big></b>
+		                                </label>
+		                                <input type="text" id="name" class="form-control" placeholder="Enter your name" ng-model="name">
+		                           	</div>
+	                           	</div>
+	                           	<div class="col-12 col-md-5 offset-md-1">
+		                            <div class="frm form-group">
+		                                <label for="email">
+		                                    <b><big>Email-id<sup class="sp">*</sup></big></b>
+		                                </label>
+		                                <input type="email" id="email" class="form-control" placeholder="Enter your email-id" ng-model="email">
+		                               <!--  <small class="text-info form-text">(Your email-id will not be shared with anyone)</small> -->
+		                            </div>
+	                            </div>
+                        	</div>
+
+                            <div class="row">
+								<div class="col-12 col-md-5 ml-md-3">
+									<div class="frm form-group">
+                                		<label for="mobile_number">
+                                    		<b><big>Phone No<sup class="sp">*</sup></big></b>
+                                		</label>
+                                		<input type="tel" maxlength="10" minlength="10" id="mobile_number" class="form-control" placeholder="Enter your Number" width="30%" ng-model="phone">
+                                		<!-- <small class="text-info form-text">(Your number will not be shared with anyone)</small> -->
+                           			 </div>                      
+								</div>
+								<div class="col-12 col-md-5 offset-md-1">
+									<div class="frm form-group">
+		                                <label for="linkedin">
+		                                    <b><big>LinkedIn ID</big></b>
+		                                </label>
+		                                <input type="text" id="linkedin" class="form-control" placeholder="Enter your LinkedIn ID" ng-model="linkedin">
+		                           	</div>
+								</div>
                             </div>
-                            <div class="frm form-group">
-                                <label for="email">
-                                    <b><big>Email-id<sup class="sp">*</sup></big></b>
-                                </label>
-                                <input type="email" id="email" class="form-control" placeholder="Enter your email-id" ng-model="email">
-                                <small class="text-info form-text">(Your email-id will not be shared with anyone)</small>
-                            </div>
-                            <div class="frm form-group">
-                                <label for="mobile_number">
-                                    <b><big>Phone No<sup class="sp">*</sup></big></b>
-                                </label>
-                                <input type="tel" maxlength="10" minlength="10" id="mobile_number" class="form-control" placeholder="Enter your Number" width="30%" ng-model="phone">
-                                <small class="text-info form-text">(Your number will not be shared with anyone)</small>
-                            </div>                           
-                            <div class="frm form-group">
-                                <label for="Feedback">
-                                    <b><big>Feedback</big></b>
-                                </label>
-                                <textarea rows="3" id="Feedback" class="form-control" placeholder="Share your views about MY PORTFOLIO..." ng-model="feedbacks"></textarea>
-                                <small class="text-info form-text">(Your feedback is valuable to me)</small>
+                            <div class="frm form-group mx-md-4">
+		                        <label for="Feedback">
+		                        	<b><big>Feedback</big></b>
+		                        </label>
+                                <textarea rows="4" id="Feedback" class="form-control" placeholder="Share your views about MY PORTFOLIO..." ng-model="feedbacks"></textarea>
+                                <!-- <small class="text-info form-text">(Your feedback is valuable to me)</small> -->
                             </div>
                             <center>
-                                <button class="btn btn-success mb-0" ng-click="postData()"><b>Submit</b></button>
+                                <button class="btn my-3" ng-click="postData()"><b>SUBMIT</b></button>
                             </center>
                         </form>
                     </div>

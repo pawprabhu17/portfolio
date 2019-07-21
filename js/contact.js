@@ -1,3 +1,11 @@
+$('a.active').click(function(e){    
+    e.preventDefault();
+
+});
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
 
 var app=angular.module('myApp',[]);
 
@@ -18,17 +26,3 @@ app.controller('myController',function ($scope,$http){
          
     });
 
-
-/*$scope.postData=function(){          
-                 var request=$http({
-                 method:"post",
-                 url: window.location.href+ "contact.php",
-                 data: {
-                    name: $scope.name,
-                    email: $scope.email,
-                    phone: $scope.phone,
-                    feedbacks: $scope.feedbacks,
-                },
-                headers: { 'Content-Type': 'multipart/form-data' }
-            });
-}*/

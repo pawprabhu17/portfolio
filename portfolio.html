@@ -21,11 +21,55 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
 	
-    <nav class="navbar navbar-dark navbar-expand-sm  d-none d-sm-block">    
-        <h2>Portfolio</h2>               
-    </nav>
-	
-	
+    
+        <nav class="navbar navbar-dark navbar-expand-sm mb-0">    
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="Navbar"> 
+
+                <div class="navbar-nav mr-auto d-none d-md-block">
+                    <li class="nav-item mx-1 mx-md-0">
+                        <a class="nav-link active" href="#" data-toggle="tooltip" title="You Are At Portfolio Page!">
+                            <h4 style="color:#2ccaa8;">Portfolio</h4>
+                        </a>
+                    </li>
+                </div>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-1 mx-md-3">
+                        <a class="nav-link" href="/index.html">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1 mx-md-3">
+                        <a class="nav-link" href="/about.html">
+                            <h4>About</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1 mx-md-3">
+                        <a class="nav-link" href="/contact.html">
+                            <h4>Contact Me</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+                  
+        </nav>
+
+    <div class="row">
+        <div class="col-12">
+        	<img src="img/blog_background.jpg" class="img-fluid img-responsive">
+            <div class="carousel-caption">
+                <div id="container">
+                    <div id="text"></div>
+                    <div id="cursor"></div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+	<div class="container-fluid">
 		<div class="row mx-sm-5 mx-1 mt-2">
 			<div class="col-12 col-sm-12">
 				<div class="card p-3">
@@ -35,3 +79,8 @@
 				</div>
 			</div>
 		</div>
+    </div>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+</body>
+
+</html>

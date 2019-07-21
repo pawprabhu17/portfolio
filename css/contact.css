@@ -1,19 +1,77 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background-color: #009975;
+	background-color:#155b44;
 	overflow-x: hidden;
-	overflow-y: hidden;
+	
 }
 /*.navbar-dark{
 	background:#34A853;
 }*/
-
-.card-header{
-	background: #454d66;
-	opacity: 0.9;
-	color: white;
+li a h4{
+	color: #cee8e7;
+	
 }
+li a h4:hover{
+	color:#FBBE0C;
+}
+.card{
+	box-shadow:5px 10px 15px;
+	background-color: #d4e2c5;
+}
+label{
+	color: #42549f;
+  font-family: 'News Cycle', sans-serif;
+}
+input[type="text"],
+select.form-control {
+  /*background: transparent;*/
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="email"],
+select.form-control {
+ /* background: transparent;*/
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+input[type="email"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="tel"],
+select.form-control {
+  /*background: transparent;*/
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+input[type="tel"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
 .frm{
     margin:15px;
 }
@@ -21,12 +79,15 @@ body{
 	color: red;
 }
 .btn{
+	background-color:  #24880b;
+	color:#cee8e7;
 	transition-timing-function:ease;
     transition-property:all;
     transition-duration: 0.7s;
 }
 .btn:hover{
 	color: #FBBE0C;
+	
 	transform: scale(1.2);
 	
 }

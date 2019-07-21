@@ -24,20 +24,27 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
 
         
-    <nav class="navbar navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top">
                    
             <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>   
 
             <div class="collapse navbar-collapse" id="Navbar">
+                <div class="navbar-nav mr-auto">
+                    <li class="nav-item mx-1 mx-md-0">
+                        <a class="nav-link active" href="#" data-toggle="tooltip" title="You Are At Home!">
+                            <h4 style="color:#2ccaa8;">Home</h4>
+                        </a>
+                    </li>
+                </div>
                 <ul class="navbar-nav ml-auto">                    
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" href="/about.html">    
+                    <li class="nav-item mx-1 mx-md-3">
+                        <a class="nav-link" href="/test.html">    
                             <h4>About</h4>
                         </a>
                     </li>
-                    <li class="nav-item mx-3">
+                    <li class="nav-item mx-1 mx-md-3">
                         <a class="nav-link" href="/portfolio.html">       
                             <h4>Portfolio</h4>
                         </a>
@@ -47,15 +54,20 @@
         
     </nav>
      
-    <div class="container p-0">   
+     <div class="container p-0">   
         <center>
             <div class="h-75 mt-5 row align-items-center ">
 
                 <div class="col-12 col-sm-12 ">
                     <h1><b>Hello, I'm Pawan Prabhu!</b></h1>
                     <br>
-
-                    <h5 class="align-items-center col-10">Front-End Dev | Programmer </h5>
+                
+                    <h4>
+                        <div id="container">
+                            <div id="text"></div>
+                            <div id="cursor"></div>
+                        </div>
+                    </h4>
                     <br>
                     
                     <div class="social col-12">
@@ -86,6 +98,8 @@
             </a>
         </center>
     </div>   
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
         
+        <!-- https://pawprabhu17.github.io/portfolio/ -->
